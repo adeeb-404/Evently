@@ -1,0 +1,39 @@
+.HomeBody{
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    z-index: 1;
+    /* width: fit-content; */
+    height: 100vh;
+    width: auto;
+    margin-top: 4.5rem;
+    top: 4.5rem;
+    /* overflow: hidden; */
+  }
+
+
+  .HomeBody .randomDiv{
+    flex: 2;
+    align-self: flex-start;
+    position: sticky;
+    width:20%;
+    overflow: auto;
+    top: 4.5rem;
+    /* opacity: 0; */
+  }
+/* 
+  .HomeBody {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    top: 4.5rem;
+    border-left: 7px solid black;
+  } */
+
+  .EventListDiv{
+    width: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .EventListDiv::-webkit-scrollbar { width: 0 !important }
