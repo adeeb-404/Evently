@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import '../CSS-components/AddEvent.css';
 
 const AddEvent = ({setEvents}) => {
     const[event,setEvent]=useState({
@@ -12,7 +13,7 @@ const AddEvent = ({setEvents}) => {
         ageGroup:undefined,
         category:undefined,
         contactNo : undefined,
-        description:undefined,
+        discription:undefined,
     })
     const handlePost=(e)=>{
         setEvent(prev=>({
@@ -25,7 +26,7 @@ const AddEvent = ({setEvents}) => {
         console.log(event)
         setEvents(prev=>[event,...prev])
     }
-  return (
+  return (<div className='AddEvent'>
    <form action="" onSubmit={submitHandler} className=''>
     <input type="text"name='festName' onChange={handlePost} />
     <input type="text"name='place'  onChange={handlePost}/>
@@ -35,10 +36,11 @@ const AddEvent = ({setEvents}) => {
     <input type="text" name='dressCode'  onChange={handlePost}/>
     <input type="text" name='ageGroup'  onChange={handlePost}/>
     <input type="text" name='category'  onChange={handlePost}/>
-    <input type="text" name='contactNo'  onChange={handlePost}/>
-    <input type="text" name='description'  onChange={handlePost}/>
+    <input type="number" name='contactNo'  onChange={handlePost}/>
+    <input type="text" name='discription'  onChange={handlePost}/>
     <button type='submit'>submit</button>
    </form>
+   </div>
   )
 }
 

@@ -1,4 +1,3 @@
-
 .popupBody{
     z-index: 200;
     height: 100vh;
@@ -9,7 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    z-index: 3;
+    background-color: black;
     /* filter: blur(0.4rem); */
 }
 
@@ -25,6 +25,8 @@
     top: 1rem;
     text-align: left;
     overflow-y:scroll;
+    display: flex;
+    flex-direction: column;
     /* font-weight: bold; */
 }
 
@@ -86,4 +88,22 @@
 .popupContent::-webkit-scrollbar {
     display: none;
   }
+
+.popupContent .AttendBtn{
+    background-color: var(--bColor);
+    width: max-content;
+    /* display: flex; */
+    text-align: right;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.AttendBtn:hover{
+    background-color: var(--hColor);
+    box-shadow: 0.1rem 0.1rem 0.6rem black;
+}
+
+
 

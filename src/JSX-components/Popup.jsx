@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import EventBox from "./EventBox";
-import '../CSS-components/Popup.css'
-import Details from "./EventDetail";
+import '../CSS-components/Popup.css';
+import  AttendEvent  from "./AttendEvent";
 
 export default function Popup(props){
     console.log(props);
+    const [IsAttend , setIsAttend] = useState(false);
 
     function closePopup(){
         props.setTriggered(false);
+        setIsAttend(false);
     }
 
-    return( <div className="popupBody">
+    function Attend(){
+        setIsAttend(true);
+    }
+
+    return( <div>
+        <div className="popupDiv"></div>
+        <div className="popupBody">
         {/* <EventBox key={index} id={index} festName={item.festName} place={item.place} time={item.time} discription={item.discription} onTap={showBox}/> */}
-        <div className="popupContent" onClick={()=>{
-            props.setTriggered(false)}}>
+        <div className="popupContent">
             <div className="bck-btn" onClick={closePopup}>X</div>
             <h2>Event Infomration : </h2>
             <div className="contentContainer">
@@ -48,6 +55,11 @@ export default function Popup(props){
                 <p className="eventDisc">Discription : </p>
                 <p className="ContentInfo">{props.discription}</p>
             </div>
+            <div className="AttendBtn" onClick={Attend}>Attend Event</div>
         </div>
-    </div>)
+    {/* {IsAttend && <AttendEvent/>} */}
+    </div>
+    {console.log(IsAttend)}
+    </div>
+    )
 }

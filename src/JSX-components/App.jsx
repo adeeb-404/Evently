@@ -5,17 +5,23 @@ import HomeNav from './homeNav.jsx'
 import HomeBody from './HomeBody.jsx'
 import OrganizerBody from './OrgnaizerBody.jsx'
 import OrgnaizeInfo from './EventInform.jsx'
+import { ProfilePage } from './ProfilePage.jsx';
 
 function App() {
+  const [searchValue , setSearchValue] = useState("");
+  function handleSearch(value){
+    setSearchValue(value);
+  }
+
+  console.log(searchValue);
   return (
     <>
-    {/* <h1>Hi hello world</h1> */}
-      <HomeNav />
-      <HomeBody />
-      <p className='text-black'>HI</p>
+      <HomeNav handleSearch={handleSearch}/>
+      <HomeBody searchValue = {searchValue}/>
+      {/* <ProfilePage/>  */}
       {/* <OrganizerBody/> */}
     </>
   )
 }
 
-export default App
+export default App;

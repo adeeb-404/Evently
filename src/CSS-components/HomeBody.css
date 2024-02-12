@@ -4,7 +4,7 @@
     position: sticky;
     z-index: 1;
     /* width: fit-content; */
-    height: 100vh;
+    height: max-content;
     width: auto;
     margin-top: 4.5rem;
     top: 4.5rem;
@@ -15,11 +15,10 @@
   .HomeBody .randomDiv{
     flex: 2;
     align-self: flex-start;
+    height: 90vh;
     position: sticky;
     width:20%;
-    overflow: auto;
-    top: 4.5rem;
-    /* opacity: 0; */
+    border-right: 1rem solid black;
   }
 /* 
   .HomeBody {
@@ -32,8 +31,10 @@
 
   .EventListDiv{
     width: 80%;
-    overflow-y: auto;
-    overflow-x: hidden;
+    max-height: 90vh;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 0;
   }
 
   .EventListDiv::-webkit-scrollbar { width: 0 !important }
