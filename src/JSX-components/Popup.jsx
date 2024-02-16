@@ -14,7 +14,7 @@ export default function Popup(props) {
     <>
       <div className="popupBody bg-opacity-85 bg-slate-950">
         {/* <EventBox key={index} id={index} festName={item.festName} place={item.place} time={item.time} discription={item.discription} onTap={showBox}/> */}
-        <div className="popupContent bg-slate-800 border-2 p-4">
+        <div className="popupContent bg-slate-800 border-2 p-4 h-[80%]">
           <div className="bck-btn w-11 h-8" onClick={closePopup}>
             X
           </div>
@@ -51,6 +51,9 @@ export default function Popup(props) {
             <p className="eventDisc">Discription : </p>
             <p className="ContentInfo">{props.discription}</p>
           </div>
+          <button className=" border-2 w-36 h-10 m-4 hover:bg-gradient-to-tr hover:from-orange-400 hover:to-red-600 hover:transition-all">
+            Attend Event
+          </button>
         </div>
       </div>
     </>

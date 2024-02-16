@@ -24,3 +24,15 @@
   padding: 0.3rem 0.4rem;
   align-self: center;
 }
+
+.AddEvent::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.Add-event-details {
+  text-shadow: 2px 2px black;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0 !important;
+}

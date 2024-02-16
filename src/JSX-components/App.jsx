@@ -11,12 +11,12 @@ function App() {
 
   console.log(searchValue);
   return (
-    <>
+    <div className="h-full">
       <HomeNav handleSearch={handleSearch} />
       <HomeBody searchValue={searchValue} />
       {/* <ProfilePage /> */}
       {/* <OrganizerBody/> */}
-    </>
+    </div>
   );
 }
 

@@ -10,7 +10,7 @@ const Details = [
     dressCode: "formal",
     contactNo: "9964729092",
     discription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus augue, porta eget dignissim sed, vestibulum sit amet lorem. Integer mauris purus, malesuada tincidunt lorem eu, rutrum dignissim nunc. Aliquam erat volutpat. Nam vel mattis ex, nec tempus orci. Maecenas ut blandit augue, quis condimentum lectus. Ut imperdiet sed diam sed porttitor. Mauris elementum auctor mauris ut luctus. Suspendisse eu suscipit purus, non suscipit orci.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus augue, porta eget dignissim sed, vestibulum sit amet lorem. Integer mauris purus, malesuada tincidunt lorem eu, rutrum dignissim nunc. Aliquam erat volutpat. Nam vel mattis ex, nec tempus orci. Maecenas ut suscipit purus, non suscipit orci.",
   },
   {
     // key:2,
@@ -24,7 +24,7 @@ const Details = [
     category: "entertainment",
     contactNo: "9964729092",
     discription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus augue, porta eget dignissim sed, vestibulum sit amet lorem. Integer mauris purus, malesuada tincidunt lorem eu, rutrum dignissim nunc. Aliquam erat volutpat. Nam vel mattis ex, nec tempus orci. Maecenas ut blandit augue, quis condimentum lectus. Ut imperdiet sed diam sed porttitor. Mauris elementum auctor mauris ut luctus. Suspendisse eu suscipit purus, non suscipit orci.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus augue, porta eget dignissim sed, vestibulum sit amet lorem. Integer blandit augue, quis condimentum lectus. Ut imperdiet sed diam sed porttitor. Mauris elementum auctor mauris ut luctus. Suspendisse eu suscipit purus, non suscipit orci.",
   },
   {
     // key:3,
@@ -38,7 +38,7 @@ const Details = [
     category: "entertainment",
     contactNo: "9964729092",
     discription:
-      "Lorem ipsum dolor   sit amet, consectetur adipiscing elit. Maecenas metus augue, porta eget dignissim sed, vestibulum sit amet lorem. Integer mauris purus, malesuada tincidunt lorem eu, rutrum dignissim nunc. Aliquam erat volutpat. Nam vel mattis ex, nec tempus orci. Maecenas ut blandit augue, quis condimentum lectus. Ut imperdiet sed diam sed porttitor. Mauris elementum auctor mauris ut luctus. Suspendisse eu suscipit purus, non suscipit orci.",
+      "Lorem ipsum dolor   sit amet, consectetur adipiscing elit. Maecenas metus augue, porta eget dignissim sed, vestibulum sit amet lorem. Maecenas ut blandit augue, quis condimentum lectus. Ut imperdiet sed diam sed porttitor. Mauris elementum auctor mauris ut luctus. Suspendisse eu suscipit purus, non suscipit orci.",
   },
   {
     // key:4,
@@ -52,9 +52,74 @@ const Details = [
     category: "entertainment",
     contactNo: "9964729092",
     discription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus augue, porta eget dignissim sed, vestibulum sit amet lorem. Integer mauris purus, malesuada tincidunt lorem eu, rutrum dignissim nunc. Aliquam erat volutpat. Nam vel mattis ex, nec tempus orci. Maecenas ut blandit augue, quis condimentum lectus. Ut imperdiet sed diam sed porttitor. Mauris elementum auctor mauris ut luctus. Suspendisse eu suscipit purus, non suscipit orci.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus augue, porta eget dignissim sed, vestibulum sit amet lorem. Integer blandit augue, quis condimentum lectus. Ut imperdiet sed diam sed porttitor. Mauris elementum auctor mauris ut luctus. Suspendisse eu suscipit purus, non suscipit orci.",
+  },
+  {
+    festName: "Cultural Fair Extravaganza",
+    place: "City Park Pavilion",
+    time: "10:00 AM - 6:00 PM",
+    date: "June 15th",
+    duration: "8 hours",
+    ageGroup: "All Ages",
+    category: "awareness",
+    dressCode: "Casual",
+    contactNo: "(555) 123-4567",
+    discription:
+      "Join us for a day of cultural celebration! Explore diverse traditions through food, music, dance, and art from around the world. Admission is free, and all are welcome to experience the rich tapestry of cultures in our community.",
+  },
+  {
+    festName: "Charity Gala for Hope",
+    place: "Grand Ballroom, City Center Hotel",
+    time: "6:00 PM - 10:00 PM",
+    date: "August 23rd",
+    duration: "4 hours",
+    ageGroup: "18+",
+    dressCode: "Formal Attire",
+    category: "Social",
+    contactNo: "(555) 234-5678",
+    discription:
+      "Join us for an elegant evening of dinner, dancing, and fundraising for a cause. Your ticket purchase will support our NGO's efforts to provide education and healthcare to underprivileged communities. Together, we can make a difference!",
+  },
+  {
+    festName: "Community Clean-Up Day",
+    place: "Citywide (Various Meeting Points)",
+    time: "9:00 AM - 12:00 PM",
+    date: "September 14th",
+    duration: "3 hours",
+    ageGroup: "All Ages (Children must be accompanied by an adult)",
+    dressCode: "Comfortable Clothing",
+    category: "Social",
+    contactNo: "(555) 345-6789",
+    discription:
+      "Join us in beautifying our city! Grab your gloves and help clean up litter from parks, streets, and waterways. Together, we can protect our environment and create a cleaner, greener community for all.",
+  },
+  {
+    festName: "Health & Wellness Check-Up",
+    place: "Community Health Center",
+    time: "10:00 AM - 2:00 PM",
+    date: "October 5th",
+    duration: "4 hours",
+    ageGroup: "All Ages",
+    category: "Awareness",
+    dressCode: "Casual",
+    contactNo: "(555) 456-7890",
+    discription:
+      "Take charge of your health! Visit our health camp for free check-ups, screenings, and consultations with medical professionals. Learn about preventive care and healthy living habits to improve your well-being.",
+  },
+  {
+    festName: "Sustainability Symposium",
+    place: "City Hall Conference Room",
+    time: "9:30 AM - 3:30 PM",
+    date: "November 16th",
+    duration: "6 hours",
+    ageGroup: "16+",
+    category: "Educational",
+    dressCode: "Business Casual",
+    contactNo: "(555) 567-8901",
+    discription:
+      "Join us for a day of learning and discussion on sustainability practices and environmental stewardship. Experts will share insights on climate change, renewable energy, and ways to create a more sustainable future for our planet.",
   },
 ];
 
-// dressCode:"No dress code",
+// contactNo:"No dress code",
 export default Details;
