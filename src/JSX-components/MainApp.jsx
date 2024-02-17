@@ -3,7 +3,7 @@ import "../CSS-components/App.css";
 import HomeNav from "./homeNav.jsx";
 import HomeBody from "./HomeBody.jsx";
 
-function App() {
+function MainApp() {
   const [searchValue, setSearchValue] = useState("");
   function handleSearch(value) {
     setSearchValue(value);
@@ -14,10 +14,8 @@ function App() {
     <div className="h-full">
       <HomeNav handleSearch={handleSearch} />
       <HomeBody searchValue={searchValue} />
-      {/* <ProfilePage /> */}
-      {/* <OrganizerBody/> */}
     </div>
   );
 }
 
-export default App;
+export default MainApp;
